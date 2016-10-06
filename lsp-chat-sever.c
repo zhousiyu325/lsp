@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
 	printf("wait for connect\n");
 	len = sizeof(struct sockaddr);
 	//get the client connection
-	if(new_fd = accept(sockfd, (struct sockaddr *) &clients_addr, &len) == -1)
+	if((new_fd = accept(sockfd, (struct sockaddr *) &clients_addr, &len) == -1))
 	{
 		perror("accept");
 		exit(EXIT_FAILURE);
