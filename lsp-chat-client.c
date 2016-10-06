@@ -1,6 +1,6 @@
 /**
  * client program of chat
- * by localhost pur whoami
+ * by localhost pur whoami Atum
  * 0ct 5 2016 
  * version 1.0
  **/
