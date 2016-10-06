@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		lisnum = 5; 
 	struct sockaddr_in server_addr, clients_addr;
 	//create socket object
-	if(sockfd = socket(AF_INET, SOCK_STREAM, 0)==-1)
+	if((sockfd = socket(AF_INET, SOCK_STREAM, 0))==-1)
 	{
 		perror("socket");
 		exit(EXIT_FAILURE);
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	//set server_addr 0
 	bzero(&server_addr, sizeof(server_addr));
 	server_addr.sin_family = AF_INET;
-	server_addr.sin_port = htons(myport);
+	server_addr.sin_port = htons(my_port);
 	if (argv[1])
 		server_addr.sin_addr.s_addr = inet_addr(argv[1]);
 	else
