@@ -1,6 +1,6 @@
 /**
  * client program of chat
- * by localhost pur whoami Atum
+ * by localhost pur whoami Atum JNU Y.Z.Chen
  * 0ct 5 2016 
  * version 1.0
  **/
@@ -42,8 +42,7 @@ int main(int argc, char **argv)
 {
 	int sockfd, len;
 	struct sockaddr_in dest;
-
-   	 char buffer[MAXBUF + 1];
+   	char buffer[MAXBUF + 1];
 	//1.create socket object
 	if((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
 	{
